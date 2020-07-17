@@ -1,4 +1,1 @@
-{
-  "mongoURI": "mongodb+srv://gustavo:ExuhFFXnu4Y5fjtV@triviaapp-cfjar.mongodb.net/<dbname>?retryWrites=true&w=majority",
-  "jwtSecret": "trivia_myJwtSecret"
-}
+

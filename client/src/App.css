@@ -4,7 +4,9 @@ html {
     padding: 0;
 }
 
-/* Navbar */
+/* Navbar
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
 
 .navbar {
     display: flex;
@@ -63,7 +65,39 @@ html {
     cursor: pointer;
 }
 
-/* Homepage*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .trivia-icon {
+        font-size: 22pt;
+        margin: 6px;
+        color: rgb(60, 111, 189);
+    }
+    .navbar-btn {
+        margin: 3px;
+        padding: 5px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+} /* SMARTPHONES PORTRAIT */
+
+@media only screen and (min-width: 748px) and (max-width: 991px) {
+    .navbar-btn-container {
+        margin-right: 50px;
+    }
+} /* TABLETS PORTRAIT */
+
+/* Homepage
+////////////////////////////////////////////////////////////////////////
+*/
 
 .homepage-bg {
     display: flex;
@@ -114,7 +148,83 @@ img {
     cursor: pointer;
 }
 
-/* Register Page*/
+.home-register-btn {
+    margin: 13px;
+    padding: 10px;
+    width: 330px;
+    background: radial-gradient(
+        circle,
+        rgb(64, 115, 190) 0%,
+        rgb(73, 125, 204) 62%
+    );
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.home-login-btn {
+    margin: 13px;
+    padding: 10px;
+    width: 330px;
+    background: radial-gradient(
+        circle,
+        rgb(64, 115, 190) 0%,
+        rgb(73, 125, 204) 62%
+    );
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .home-register-btn {
+        margin: 13px;
+        padding: 10px;
+        width: 250px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+
+    .home-login-btn {
+        margin: 13px;
+        padding: 10px;
+        width: 250px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+}
+
+/* Register page
+////////////////////////////////////////////////////////////////////////
+*/
 
 .register-container {
     display: flex;
@@ -173,7 +283,49 @@ img {
     cursor: pointer;
 }
 
-/* Login */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .register-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+        font-family: "Heebo", sans-serif;
+        border-radius: 0.5rem;
+        background-color: white;
+    }
+
+    .register-form > input {
+        margin: 20px;
+        padding: 12px;
+        outline: none;
+        border: 0.5px solid rgba(0, 0, 0, 0.26);
+        border-radius: 0.5rem;
+        width: 200px;
+    }
+
+    .register-btn {
+        margin: 13px;
+        padding: 10px;
+        width: 150px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+} /* SMARTPHONES PORTRAIT */
+
+/* Login
+////////////////////////////////////////////////////////////////////////
+*/
 
 .login-container {
     display: flex;
@@ -184,28 +336,104 @@ img {
     margin-top: 10px;
 }
 
-/* Dashboard */
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+    font-family: "Heebo", sans-serif;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.login-form > input {
+    margin: 20px;
+    padding: 12px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.26);
+    border-radius: 0.5rem;
+    width: 300px;
+}
+
+.login-btn {
+    margin: 13px;
+    padding: 10px;
+    width: 330px;
+    background: radial-gradient(
+        circle,
+        rgb(64, 115, 190) 0%,
+        rgb(73, 125, 204) 62%
+    );
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.login-btn:hover {
+    box-shadow: 2px 2px 2px rgba(19, 19, 19, 0.246);
+    background: radial-gradient(
+        circle,
+        rgb(83, 133, 209) 10%,
+        rgb(75, 134, 223) 82%
+    );
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .login-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+        font-family: "Heebo", sans-serif;
+        border-radius: 0.5rem;
+        background-color: white;
+        width: 270px;
+    }
+
+    .login-form > input {
+        margin: 20px;
+        padding: 12px;
+        outline: none;
+        border: 0.5px solid rgba(0, 0, 0, 0.26);
+        border-radius: 0.5rem;
+        width: 250px;
+    }
+
+    .login-btn {
+        margin: 13px;
+        padding: 10px;
+        width: 250px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+} /* SMARTPHONES PORTRAIT */
+
+/* Dashboard
+////////////////////////////////////////////////////////////////////////
+*/
 
 .dashboard-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
-    background: radial-gradient(
-        circle,
-        rgb(44, 77, 128) 0%,
-        rgba(37, 58, 89, 1) 62%
-    );
-    margin: 1em;
-    border-radius: 1rem;
-    font-family: "Heebo", sans-serif;
-}
-
-.dashboard-container-resize {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
     background: radial-gradient(
         circle,
         rgb(44, 77, 128) 0%,
@@ -308,7 +536,194 @@ img {
 
 .game-form {
     display: flex;
+    align-items: center;
     flex-direction: column;
+}
+
+.dashboard-play-btn {
+    margin: 13px;
+    padding: 10px;
+    width: 330px;
+    background: radial-gradient(
+        circle,
+        rgb(64, 115, 190) 0%,
+        rgb(73, 125, 204) 62%
+    );
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.dashboard-play-btn:hover {
+    box-shadow: 2px 2px 2px rgba(19, 19, 19, 0.246);
+    background: radial-gradient(
+        circle,
+        rgb(83, 133, 209) 10%,
+        rgb(75, 134, 223) 82%
+    );
+    cursor: pointer;
+}
+
+.x-btn {
+    margin: 13px;
+    padding: 10px;
+    width: 330px;
+    background: radial-gradient(
+        circle,
+        rgb(64, 115, 190) 0%,
+        rgb(73, 125, 204) 62%
+    );
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.x-btn:hover {
+    box-shadow: 2px 2px 2px rgba(19, 19, 19, 0.246);
+    background: radial-gradient(
+        circle,
+        rgb(83, 133, 209) 10%,
+        rgb(75, 134, 223) 82%
+    );
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 857px) {
+    .dashboard-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: radial-gradient(
+            circle,
+            rgb(44, 77, 128) 0%,
+            rgba(37, 58, 89, 1) 62%
+        );
+        margin: 1em;
+        border-radius: 1rem;
+        font-family: "Heebo", sans-serif;
+    }
+
+    .matches {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 6px;
+        padding: 5px;
+        background: linear-gradient(
+            191deg,
+            rgb(82, 140, 235) 0%,
+            rgba(63, 135, 216, 1) 50%,
+            rgba(53, 105, 164, 1) 100%
+        );
+        border-radius: 2rem;
+        color: rgb(255, 255, 255);
+    }
+
+    .matches > h3 {
+        padding: 5px;
+    }
+
+    .dashboard-play-btn {
+        margin: 13px;
+        padding: 10px;
+        width: 230px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+
+    .col-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 1em;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    .game-form > select {
+        margin: 10px;
+        padding: 12px;
+        outline: none;
+        border: 0.5px solid rgba(0, 0, 0, 0.26);
+        border-radius: 0.5rem;
+        width: 200px;
+        background: rgba(63, 135, 216, 1) 50%;
+        font-size: 15pt;
+        color: white;
+    }
+
+    .game-form > input {
+        margin: 10px;
+        padding: 12px;
+        outline: none;
+        border: 0.5px solid rgba(0, 0, 0, 0.26);
+        border-radius: 0.5rem;
+        width: 170px;
+        background: rgba(63, 135, 216, 1) 50%;
+        font-size: 15pt;
+        color: white;
+    }
+
+    .game-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .x-btn {
+        margin: 13px;
+        padding: 10px;
+        width: 200px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+} /* SMARTPHONES PORTRAIT */
+
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    background: radial-gradient(
+        circle,
+        rgb(44, 77, 128) 0%,
+        rgba(37, 58, 89, 1) 62%
+    );
+    margin: 1em;
+    border-radius: 1rem;
+    font-family: "Heebo", sans-serif;
 }
 
 /* game */
@@ -346,7 +761,7 @@ img {
 .answer-btn {
     margin: 13px;
     padding: 10px;
-    width: 330px;
+    width: 300px;
     background: radial-gradient(
         circle,
         rgb(64, 115, 190) 0%,
@@ -363,6 +778,34 @@ img {
 
 .answer-btn:hover {
     box-shadow: 2px 2px 2px rgba(19, 19, 19, 0.246);
+    cursor: pointer;
+}
+
+.wrong-answer-btn {
+    margin: 13px;
+    padding: 10px;
+    width: 300px;
+    background: radial-gradient(
+        circle,
+        rgb(64, 115, 190) 0%,
+        rgb(73, 125, 204) 62%
+    );
+    font-family: "Heebo", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.wrong-answer-btn:hover {
+    box-shadow: 2px 2px 2px rgba(19, 19, 19, 0.246);
+    background: radial-gradient(
+        circle,
+        rgb(83, 133, 209) 10%,
+        rgb(75, 134, 223) 82%
+    );
     cursor: pointer;
 }
 
@@ -447,7 +890,79 @@ img {
     }
 }
 
-/* Ranking */
+@media only screen and (min-width: 320px) and (max-width: 779px) {
+    .question-container {
+        background: linear-gradient(
+            191deg,
+            rgba(138, 194, 229, 1) 0%,
+            rgba(63, 135, 216, 1) 50%,
+            rgba(53, 105, 164, 1) 100%
+        );
+        color: white;
+        padding: 5px;
+        text-align: center;
+        font-family: "Heebo", sans-serif;
+        border-radius: 1rem;
+        margin: 15px;
+    }
+
+    .answer-btn {
+        margin: 8px;
+        padding: 10px;
+        width: 250px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+
+    .wrong-answer-btn {
+        margin: 8px;
+        padding: 10px;
+        width: 250px;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        font-family: "Heebo", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+
+    .loading-bar {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        background: radial-gradient(
+            circle,
+            rgb(64, 115, 190) 0%,
+            rgb(73, 125, 204) 62%
+        );
+        border-radius: 2rem;
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+        font-family: "Heebo", sans-serif;
+        font-size: 10pt;
+    }
+} /* SMARTPHONES PORTRAIT */
+
+/* Ranking 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
 
 .ranking-container {
     display: flex;
@@ -495,3 +1010,55 @@ img {
     border-radius: 1.5rem;
     color: white;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .ranking {
+        display: none;
+    }
+
+    .ranking-1 {
+        display: flex;
+        justify-content: space-between;
+        width: 88%;
+        background: linear-gradient(
+            191deg,
+            rgb(126, 156, 223) 0%,
+            rgb(75, 147, 230) 50%,
+            rgb(83, 151, 230) 100%
+        );
+        padding: 10px;
+        margin: 15px;
+        border-radius: 1.5rem;
+        color: white;
+    }
+} /* SMARTPHONES PORTRAIT */
+
+/* Default 
+/////////////////////////////////////////////////////////////////////
+*/
+
+.default {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    font-size: 55pt;
+    font-family: sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(51, 96, 221);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 730px) {
+    .default {
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-top: 150px;
+        font-size: 35pt;
+        font-family: sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: rgb(51, 96, 221);
+    }
+} /* SMARTPHONES PORTRAIT */

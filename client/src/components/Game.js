@@ -69,7 +69,7 @@ export default function Game() {
                     className={`${
                         res.correct_answer == answers
                             ? "answer-btn"
-                            : "register-btn"
+                            : "wrong-answer-btn"
                     }`}
                     onClick={() =>
                         res.correct_answer == answers

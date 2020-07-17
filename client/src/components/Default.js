@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Default() {
-    return <div>this is the default page</div>;
+    return <div className="default">Error page not found...</div>;
 }

@@ -40,7 +40,7 @@ export default function Login() {
 
     return (
         <div className="login-container">
-            <form onSubmit={onSubmit} className="register-form">
+            <form onSubmit={onSubmit} className="login-form">
                 <label>
                     <h3>Email</h3>
                 </label>
@@ -77,7 +77,7 @@ export default function Login() {
                         ? "Invalid Credentials"
                         : ""}
                 </h3>
-                <button className="register-btn">Login</button>
+                <button className="login-btn">Login</button>
             </form>
         </div>
     );

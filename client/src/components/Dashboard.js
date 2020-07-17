@@ -16,8 +16,6 @@ export default function Dashboard() {
     const [difficulty, setDifficulty] = useState("easy");
     const [start, setStart] = useState(false);
     const [error, setError] = useState(false);
-    const [open, setOpen] = useState(true);
-    const [open2, setOpen2] = useState(true);
     const [loader, setLoader] = useState(false);
     const [seeMatches, setSeeMatches] = useState(false);
     const element = <FontAwesomeIcon icon={faTimes} />;
@@ -50,29 +48,6 @@ export default function Dashboard() {
             );
         });
     }
-
-    useEffect(() => {
-        window.addEventListener("resize", resize);
-
-        //Onload check innerWidth
-        const loadOpen = window.innerWidth;
-        if (loadOpen < 1210) {
-            setOpen2(false);
-        } else if (loadOpen > 1210) {
-            setOpen2(true);
-        }
-
-        //On Resize check innerWidth
-        function resize() {
-            const width = window.innerWidth;
-
-            if (width < 1210) {
-                setOpen(false);
-            } else if (width > 1210) {
-                setOpen(true);
-            }
-        }
-    });
 
     useEffect(() => {
         if (gameCategories && difficulty && amount) {
@@ -128,14 +103,7 @@ export default function Dashboard() {
             {loader == false ? (
                 <div className="spinner-1"></div>
             ) : (
-                <div
-                    className={
-                        (open,
-                        open2
-                            ? "dashboard-container"
-                            : "dashboard-container-resize")
-                    }
-                >
+                <div className="dashboard-container">
                     <div className="col-1">
                         <div className="col-user">
                             <div className="dashboard-header">
@@ -177,7 +145,7 @@ export default function Dashboard() {
                     {start ? (
                         <div className="col-2">
                             <button
-                                className="register-btn"
+                                className="x-btn"
                                 onClick={onStart}
                                 style={{
                                     fontSize: "15pt",
@@ -237,13 +205,8 @@ export default function Dashboard() {
                         </div>
                     ) : (
                         <button
-                            className="register-btn"
+                            className="dashboard-play-btn"
                             onClick={onStart}
-                            style={{
-                                padding: "25px",
-                                margin: "50px",
-                                fontSize: "25pt",
-                            }}
                         >
                             Play
                         </button>
